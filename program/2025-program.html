@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html>
 
 <head>
     <base href="..">
@@ -12,37 +12,64 @@
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
     <meta name="KeyWords" content="Conference">
+        <style>
+        /* Hide elements not matching the selected language */
+        body[data-lang="en"] [lang="es"],
+        body[data-lang="es"] [lang="en"] {
+            display: none;
+        }
+    </style>
     <title>Program | Conference Template</title>
 </head>
 
 <body>
 
+    <!-- Language selector -->
+    <div>
+        <label>
+            <input type="radio" name="language" value="en" checked>
+            English
+        </label>
+        <label>
+            <input type="radio" name="language" value="es">
+            Español
+        </label>
+    </div>
     <div class="banner">
-        <img src="assets/banner.jpg" alt="Conference Template Banner">
+        <img width=100%, height=auto src="images/2025-banner.png" alt="Conference Template Banner">
         <div class="top-left">
-            <span class="title1">Conference</span><span class="title2">Template</span> <span class="year">2525</span>
+            <span class="title1">Encuentro de Gramática Generativa</span> <span class="year">2025</span>
         </div>
-        <div class="bottom-right">
-            June 31, 2525 <br> University Name, and City Maybe
+        <div lang="es" class="bottom-right">
+            Del 6 al 8 de Agosto de 2025 <br> Universidad de Buenos Aires, Argentina
         </div>
+<div lang="en" class="bottom-right">
+            August 6 to 8, 2025 <br> University of Buenos Aires, Argentina</div>
     </div>
 
     <table class="navigation">
         <tr>
             <td class="navigation">
-                <a title="Conference Home Page" href=".">Home</a>
+                <a lang="en" title="Conference Home Page" href="index.html">Home</a>
+                 <a lang="es" title="Conference Home Page" href="index.html">Página principal</a>          </td>
+            <td class="navigation">
+                <a lang="en" title="Register for the Conference" href="registration/">Registration</a>
+                <a lang="es" title="Register for the Conference" href="registration/">Inscripción</a>
+
             </td>
             <td class="navigation">
-                <a title="Register for the Conference" href="registration">Registration</a>
+                <a lang="en" class="current" title="Conference Program" href="program/2025-program.html">Program</a>
+                <a lang="en" class="current" title="Conference Program" href="program/2025-program.html">Program</a> 
+ 
             </td>
             <td class="navigation">
-                <a class="current" title="Conference Program" href="program">Program</a> 
+                <a lang="en" title="Directions to the Conference" href="directions/turisticinfo.html">Turistic information</a>
+                <a lang="es" title="Directions to the Conference" href="directions/turisticinfo.html">Información turística</a>
             </td>
             <td class="navigation">
-                <a title="Directions to the Conference" href="directions">Directions</a>
-            </td>
-            <td class="navigation">
-                <a title="Conference Flyer" href="flyer">Flyer</a>
+                <a lang="en" title="Conference Flyer" href="previous-editions/previous-editions.html">Previous editions</a>
+                <a lang="es" title="Conference Flyer" href="previous-editions/previous-editions.html">Ediciones previas</a>
+
             </td>
         </tr>
     </table>
@@ -330,6 +357,26 @@
         &nbsp;|&nbsp; Design by <a href="https://github.com/mikepierce">Mike Pierce</a>
     </footer>
 
+<script>
+        // Language switching functionality
+        document.querySelectorAll('input[name="language"]').forEach(radio => {
+            radio.addEventListener('change', function() {
+                document.body.setAttribute('data-lang', this.value);
+                
+                // Optional: Store language preference in localStorage
+                localStorage.setItem('preferredLanguage', this.value);
+            });
+        });
+
+        // Check for saved language preference on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedLanguage = localStorage.getItem('preferredLanguage');
+            if (savedLanguage) {
+                document.querySelector(`input[name="language"][value="${savedLanguage}"]`).checked = true;
+                document.body.setAttribute('data-lang', savedLanguage);
+            }
+        });
+    </script>
 </body>
 </html>
 
