@@ -1,78 +1,182 @@
-
-<!doctype html>
-<html lang="es">
+<!DOCTYPE html>
+<html>
 
 <head>
     <base href=".">
-        <meta charset="utf-8">
-    <link rel="shortcut icon" type="image/png" href="images/2025-logosonfondo.svg"/>
+    <link rel="shortcut icon" type="image/png" href="images/2025-logosinfondo.svg"/>
     <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
     <meta name="description" content="Conference Template">
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
     <meta name="KeyWords" content="Conference">
-    
-        <!-- Bootstrap core CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+    <style>
+        /* Hide elements not matching the selected language */
+        body[data-lang="en"] [lang="es"],
+        body[data-lang="es"] [lang="en"] {
+            display: none;
+        }
+    </style>
     <title>Encuentro de Gramática Generativa</title>
 </head>
 
-  <body>
-  
-  <div class="banner">
-        <img src="images/2025-banner.png" width="auto" alt="Conference Template Banner">
-        <div class="top-left">
-            <span class="title1">Encuentro de Gramática Generativa</span> <br><span class="year">2025</span>
-        </div>
-        <div class="bottom-right">
-            August 6 to 8, 2525 <br> Universidad de Buenos Aires, Argentina, Buenos Aires, Argentina  </div>
+<body>
+
+    <!-- Language selector -->
+    <div>
+        <label>
+            <input type="radio" name="language" value="en" checked>
+            English
+        </label>
+        <label>
+            <input type="radio" name="language" value="es">
+            Español
+        </label>
     </div>
-    
-<!-- /.container -->
-    <main class="container">
-      <div class="column is-8 featured-image-wrapper" style="padding: 10em 0 0 0" align=center>
-
-      <section class="Que-hacemos text-center">
-        <div class="container-fluid" width="auto" id=que-hacemos, align=center>
-          <h2 class="mb-5">Choose your language/Elija su lengua</h2>
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="card text-white bg-dark mb-3">
-                <div class="card-body">
-                  <a href="index-en.html" style="color:whitesmoke;"><h5 class="card-title">English</h5></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="card text-white bg-dark mb-3">
-                <div class="card-body">
-                  <a href="index-es.html" style="color:whitesmoke;"><h5 class="card-title">Spanish</h5></a>
-                </div>
-              </div>
-            </div>
-          </div>
+    <div class="banner">
+        <img width=100%, height=auto src="images/2025-banner.png" alt="Conference Template Banner">
+        <div class="top-left">
+            <span class="title1">Encuentro de Gramática Generativa</span> <span class="year">2025</span>
         </div>
-        <p>
-          <br>
-          <br>
-        </p>
-      </section>
-    </main>
+        <div lang="es" class="bottom-right">
+            Del 6 al 8 de Agosto de 2025 <br> Universidad de Buenos Aires, Argentina
+        </div>
+<div lang="en" class="bottom-right">
+            August 6 to 8, 2025 <br> University of Buenos Aires, Argentina</div>
+    </div>
+
+    <table class="navigation">
+        <tr>
+            <td class="navigation">
+                <a class="current" title="Encuentro de Gramática Generativa" href=".">Home</a>
+            </td>
+            <td class="navigation">
+                <a lang="en" title="Register for the Conference" href="registration">Registration</a>
+                <a lang="es" title="Register for the Conference" href="registration">Inscripción</a>
+            </td>
+            <td class="navigation">
+                <a title="Conference Program" href="program">Program</a> 
+            </td>
+            <td class="navigation">
+                <a title="Directions to the Conference" href="directions">Directions</a>
+            </td>
+            <td class="navigation">
+                <a lang="en" title="Previous edition" href="flyer">Previous edition</a>
+                <a lang="es" title="Ediciones previas" href="flyer">Ediciones previas</a>
+            </td>
+        </tr>
+    </table>
+
+<h1 data-i18n="welcome_message"></h1>
+    <p data-i18n="about_us"></p>
     
-<!-- Footer -->
-  <footer class="footer text-faded text-center py-5">
-  <div class="container">
-    <p class="m-0 mbt1">&copy; Escuela de Lingüística de Buenos Aires.</p>
-    <p class="font-weight-light mb-0">elbalinguistics@gmail.com</p>
-<p class="font-weight-light mb-0"><a href="https://www.facebook.com/Escuela-de-Ling%C3%BC%C3%ADstica-de-Buenos-Aires-ELBA-1457176331278469/" target="_blank"><img src="images/facebook-logo.svg" alt="" width="26" height="26" title="Facebook"></a> 
-<a href="https://www.instagram.com/elbalinguistics/" target="_blank"><img src="images/instagram-logo.svg" alt="" width="26" height="26" title="Instagram"></a></p>
-</div>
+    <h2 lang="en">Description</h2>
+    <h2 lang="es">Descripción</h2>
+    <p lang="es">
+        El principal objetivo del Encuentro de Gramática Generativa es estimular la discusión acerca de los temas salientes de la gramática desde distintos modelos formales y, a la vez, establecer un ámbito de encuentro e intercambio para los grupos de investigación sobre estos temas en nuestro país.
+    </p>
+    <p lang=en>
+        The Encuentro de Gramática Generativa aims to stimulate discussion on emerging topics in grammar from various formal models and, at the same time, to establish a forum for gathering and exchange among research groups working on these subjects in our country. 
+    </p>
+
+    <h2 lang="en">Next meeting</h2>
+    <h2 lang="es">Próximo encuentro</h2>
+    <p lang="es">
+        El próximo encuentro de Gramática Generativa tendrá lugar entre el 6 y 8 de agosto de 2025 en la Facultad de Filosofía y Letras de la Universidad de Buenos Aires. 
+    </p>
+    <p lang=en>
+        The Encuentro de Gramática Generativa aims to stimulate discussion on emerging topics in grammar from various formal models and, at the same time, to establish a forum for gathering and exchange among research groups working on these subjects in our country. 
+    </p>
+
+    <h2 lang="en">Organizing Committee</h2>
+    <h2 lang="es">Comité organizador</h2>
+
+    <p>
+
+<ul class="lead">		
+		<li align="justify">Lucía Alabart Lago (UNLP) <a href="https://www.memoria.fahce.unlp.edu.ar/perfiles/1449AlabartLagoL.html#:~:text=Curriculum%20abreviado%3A%20Luc%C3%ADa%20Alabart%20Lago,de%20dicha%20universidad%20desde%202015"><img src="images/webpage.svg" alt="" width="26" height="26" title="Página Web"></a></li>
+<li align="justify">Fernando Carranza (UBA) <a href="https://sites.google.com/view/fernando-carranza/p%C3%A1gina-principal" target="_blank"><img src="images/webpage.svg" alt="" width="26" height="26" title="Página Web"></a>
+                    <a href="https://github.com/fernandocar86" target="_blank"><img src="images/github.svg" alt="" width="26" height="26" title="GitHub"></a> </li>
+                    		<li align="justify">Sofía Checchi (UBA, CONICET/UNAHUR)</li>
+                    		<li align="justify">Victoria Ferrero (UBA)</li>
+		<li align="justify">Guadalupe Herrera (UBA - UNLP)</li>
+<!--		<li align="justify">Carlos Muñoz Pérez (Universidad de Valdivia) <a href="https://voices.uchicago.edu/stigliano/" target="_blank"><img src="images/webpage.svg" alt="" width="26" height="26" title="Página Web"></a>
+</li>-->
+
+		<li align="justify">Marisol Murujosa (UBA)</li>
+		<li align="justify">José María Oliver (UNLP - CONICET)</li>
+<li align="justify">Mercedes Pujalte (UNGS-UBA-UNAHUR)</li>
+<li align="justify">Andrés Saab (CONICET-UBA) <a href="https://sites.google.com/view/andres-saab/p%C3%A1gina-principal/english" target="_blank"><img src="images/webpage.svg" alt="" width="26" height="26" title="Página Web"></a></li>
+
+		<li align="justify">María Florencia Silva (UBA)</li>
+<!--		<li align="justify">Laura Stigliano (The University of Chicago) <a href="https://voices.uchicago.edu/stigliano/" target="_blank"><img src="images/webpage.svg" alt="" width="26" height="26" title="Página Web"></a>
+</li>-->
+		<li align="justify">Romina Trebisacce (UBA)</li>
+		<li align="justify">Matías Verdecchia (CONICET - UBA) <a href="https://matiasverdecchia.netlify.app/" target="_blank"><img src="images/webpage.svg" alt="" width="26" height="26" title="Página Web"></a></li>
+		<li align="justify">Pablo Zdrojewski (UNGS-UBA-UNAJ) <a href="https://github.com/pablozd" target="_blank"><img src="images/github.svg" alt="" width="26" height="26" title="GitHub"></a> </li>
+
+</ul>
+
+    </p>
+    <table class="sponsors">
+        <tr>
+            <td class="sponsor">
+            </td>
+            <td class="sponsor">
+                <a href="https://filo.uba.ar/">
+                    <img width=5%, height=auto src="images/uba.png" alt="First Sponsor Name">
+                </a>
+            </td>
+            <td class="sponsor">
+            </td>
+        </tr>
+    </table>
+
+  <footer lang="es">
+    Encuentro de Gramática Generativa (EGG)<br>
+    encuentrodegramaticagenerativa@gmail.com
+    <br>
+<a href="https://www.facebook.com/EncuentroGG?locale=es_LA" target="_blank"><img src="images/facebook-logo.svg" alt="" width="26" height="26" title="Facebook"></a> 
+<br>
+<!--
+<a href="https://www.instagram.com/elbalinguistics/" target="_blank"><img src="images/instagram-logo.svg" alt="" width="26" height="26" title="Instagram"></a>
+<br>
+-->
+Este sitio está construido por sobre la plantilla diseñada por <a href="https://github.com/mikepierce">Mike Pierce</a>
   </footer>
+  
+      <footer lang="en">
+    Encuentro de Gramática Generativa (EGG).
+    <br>
+    encuentrodegramaticagenerativa@gmail.com
+    <br>
+<a href="https://www.facebook.com/EncuentroGG?locale=es_LA" target="_blank"><img src="images/facebook-logo.svg" alt="" width="26" height="26" title="Facebook"></a> 
+<br>
+        This webpage is build over the template designed by <a href="https://github.com/mikepierce">Mike Pierce</a>
 
+    </footer>
+
+<script>
+        // Language switching functionality
+        document.querySelectorAll('input[name="language"]').forEach(radio => {
+            radio.addEventListener('change', function() {
+                document.body.setAttribute('data-lang', this.value);
+                
+                // Optional: Store language preference in localStorage
+                localStorage.setItem('preferredLanguage', this.value);
+            });
+        });
+
+        // Check for saved language preference on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedLanguage = localStorage.getItem('preferredLanguage');
+            if (savedLanguage) {
+                document.querySelector(`input[name="language"][value="${savedLanguage}"]`).checked = true;
+                document.body.setAttribute('data-lang', savedLanguage);
+            }
+        });
+    </script>
 </body>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-      
-  </body>
+
 </html>
+
