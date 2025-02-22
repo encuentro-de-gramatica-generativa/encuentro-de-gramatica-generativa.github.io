@@ -12,15 +12,27 @@
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
     <meta name="KeyWords" content="Conference">
-        <style>
+    <style>
         /* Hide elements not matching the selected language */
-        body[data-lang="en"] [lang="es"],
-        body[data-lang="es"] [lang="en"] {
-            display: none;
-        }
+body[data-lang="pt"] [lang="pt"],
+body[data-lang="en"] [lang="en"],
+body[data-lang="es"] [lang="es"] {
+    display: block;
+}
+
+body[data-lang="pt"] [lang="en"],
+body[data-lang="pt"] [lang="es"],
+body[data-lang="en"] [lang="pt"],
+body[data-lang="en"] [lang="es"],
+body[data-lang="es"] [lang="pt"],
+body[data-lang="es"] [lang="en"] {
+    display: none;
+}       
     </style>
+    
     <title lang="en">Previous editions</title>
     <title lang="es">Ediciones previas</title>
+				<title lang="pt">Edições anteriores</title>    
 </head>
 
 <body data-lang="en">
@@ -35,6 +47,10 @@
             <input type="radio" name="language" value="es">
             Español
         </label>
+                <label>
+            <input type="radio" name="language" value="pt">
+            Português
+        </label>
     </div>
 
 
@@ -48,6 +64,9 @@
         </div>
 <div lang="en" class="bottom-right">
             August 6 to 8, 2025 <br> University of Buenos Aires, Argentina</div>
+                    <div lang="pt" class="bottom-right">
+            De 6 a 8 de agosto de 2025 <br>Universidad de Buenos Aires, Argentina
+        </div>
     </div>
 
     <table class="navigation">
@@ -55,22 +74,27 @@
             <td class="navigation">
                 <a lang="en" class="current" title="Encuentro de Gramática Generativa" href="index.html">Home</a>
                 <a lang="es" class="current" title="Encuentro de Gramática Generativa" href="index.html">Página principal</a>
+                <a lang="pt" class="current" title="Encuentro de Gramática Generativa" href="index.html">Página inicial</a>
             </td>
             <td class="navigation">
                 <a lang="en" href="registration/registration.html" title="Register for the Conference" href="registration" href="registration.html">Registration</a>
                 <a lang="es" href="registration/registration.html" title="Inscripción al Encuentro" href="registration">Inscripción</a>
+                <a lang="pt" href="registration/registration.html" title="Inscripción al Encuentro" href="registration">Cadastro</a>
             </td>
             <td class="navigation">
                 <a lang="en" title="Program" href="program/2025-program.html">Program</a> 
                 <a lang="es" title="Programa" href="program/2025-program.html">Programa</a> 
+                <a lang="pt" title="Programa" href="program/2025-program.html">Programa</a> 
             </td>
             <td class="navigation">
                 <a lang="en" title="Turistic information" href="directions/turisticinfo.html">Turistic information</a>
                 <a lang="es" title="Información turística" href="directions/turisticinfo.html">Información turística</a>
+                <a lang="pt" title="Información turística" href="directions/turisticinfo.html">Informação turística</a>
             </td>
             <td class="navigation">
                 <a lang="en" title="Previous edition" href="previous-editions/previous-editions.html">Previous edition</a>
                 <a lang="es" title="Ediciones previas" href="previous-editions/previous-editions.html">Ediciones previas</a>
+                <a lang="pt" title="Ediciones previas" href="previous-editions/previous-editions.html">Edições anteriores</a>
             </td>
         </tr>
     </table>
@@ -78,6 +102,7 @@
 
     <h2 lang="en">Previous editions</h2>
     <h2 lang="es">Ediciones previas</h2>
+    <h2 lang="pt">Edições anteriores</h2>
 
     <table>
     <tbody>
@@ -91,6 +116,9 @@
         </tr>
         <tr>
             <td class="abstract" lang="es">
+                Buenos Aires. Agosto 2018
+            </td>
+            <td class="abstract" lang="pt">
                 Buenos Aires. Agosto 2018
             </td>
             <td class="abstract" lang="en">
@@ -112,6 +140,9 @@
             <td class="abstract" lang="es">
                 Buenos Aires. Julio 2015
             </td>
+            <td class="abstract" lang="pt">
+                Buenos Aires. Julio 2015
+            </td>
             <td class="abstract" lang="en">
                 Buenos Aires. August, 2015
             </td>
@@ -130,6 +161,9 @@
         <tr>
             <td class="abstract" lang="es">
                 General Roca. Julio y Agosto 2009
+            </td>
+            <td class="abstract" lang="pt">
+                General Roca. Julho e Agosto 2009
             </td>
             <td class="abstract" lang="en">
                 General Roca. July and August, 2009
@@ -150,7 +184,10 @@
             <td class="abstract" lang="es">
                 Mendoza. Julio 2007
             </td>
-            <td class="abstract" lang="en">
+            <td class="abstract" lang="pt">
+                Mendoza. Julho, 2007
+            </td>
+           <td class="abstract" lang="en">
                 Mendoza. July, 2007
             </td>
 
@@ -168,6 +205,9 @@
         </tr>
         <tr>
             <td class="abstract" lang="es">
+                General Roca. Agosto 2005
+            </td>
+            <td class="abstract" lang="pt">
                 General Roca. Agosto 2005
             </td>
             <td class="abstract" lang="en">
@@ -189,6 +229,9 @@
             <td class="abstract" lang="es">
                 Buenos Aires. Agosto 2003
             </td>
+            <td class="abstract" lang="pt">
+                Buenos Aires. Agosto 2003
+            </td>
             <td class="abstract" lang="en">
                 Buenos Aires. August, 2003
             </td>
@@ -207,6 +250,9 @@
         <tr>
             <td class="abstract" lang="es">
                 General Roca. Noviembre 2001
+            </td>
+            <td class="abstract" lang="pt">
+                General Roca. Novembro 2001
             </td>
             <td class="abstract" lang="en">
                 General Roca. November, 2001
@@ -229,7 +275,20 @@
 -->
 Este sitio está construido por sobre la plantilla diseñada por <a href="https://github.com/mikepierce">Mike Pierce</a>
   </footer>
-  
+ 
+   <footer lang="pt">
+    Encuentro de Gramática Generativa (EGG)<br>
+    encuentrodegramaticagenerativa@gmail.com
+    <br>
+<a href="https://www.facebook.com/EncuentroGG?locale=es_LA" target="_blank"><img src="images/facebook-logo.svg" alt="" width="26" height="26" title="Facebook"></a> 
+<br>
+<!--
+<a href="https://www.instagram.com/elbalinguistics/" target="_blank"><img src="images/instagram-logo.svg" alt="" width="26" height="26" title="Instagram"></a>
+<br>
+-->
+Este site foi construído com base no modelo desenvolvido por <a href="https://github.com/mikepierce">Mike Pierce</a>
+  </footer>
+ 
       <footer lang="en">
     Encuentro de Gramática Generativa (EGG).
     <br>

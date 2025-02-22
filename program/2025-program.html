@@ -12,15 +12,28 @@
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
     <meta name="KeyWords" content="Conference">
-        <style>
+
+    <style>
         /* Hide elements not matching the selected language */
-        body[data-lang="en"] [lang="es"],
-        body[data-lang="es"] [lang="en"] {
-            display: none;
-        }
+body[data-lang="pt"] [lang="pt"],
+body[data-lang="en"] [lang="en"],
+body[data-lang="es"] [lang="es"] {
+    display: block;
+}
+
+body[data-lang="pt"] [lang="en"],
+body[data-lang="pt"] [lang="es"],
+body[data-lang="en"] [lang="pt"],
+body[data-lang="en"] [lang="es"],
+body[data-lang="es"] [lang="pt"],
+body[data-lang="es"] [lang="en"] {
+    display: none;
+}       
     </style>
-    <title lang"en">Program</title>
-    <title lang"es">Programa</title>
+
+    <title lang="en">Program</title>
+    <title lang="es">Programa</title>
+    <title lang="pt">Programa</title>
 
 </head>
 
@@ -36,7 +49,12 @@
             <input type="radio" name="language" value="es">
             Español
         </label>
+        <label>
+            <input type="radio" name="language" value="pt">
+            Português
+        </label>
     </div>
+
     <div class="banner">
         <img width=100%, height=auto src="images/2025-banner.png" alt="Conference Template Banner">
         <div class="top-left">
@@ -47,40 +65,48 @@
         </div>
 <div lang="en" class="bottom-right">
             August 6 to 8, 2025 <br> University of Buenos Aires, Argentina</div>
+                    <div lang="pt" class="bottom-right">
+            De 6 a 8 de agosto de 2025 <br>Universidad de Buenos Aires, Argentina
+        </div>
     </div>
-
+    
     <table class="navigation">
         <tr>
             <td class="navigation">
-                <a lang="en" title="Conference Home Page" href="index.html">Home</a>
-                 <a lang="es" title="Conference Home Page" href="index.html">Página principal</a>          </td>
-            <td class="navigation">
-                <a lang="en" title="Register for the Conference" href="registration/">Registration</a>
-                <a lang="es" title="Register for the Conference" href="registration/">Inscripción</a>
-
+                <a lang="en" class="current" title="Encuentro de Gramática Generativa" href="index.html">Home</a>
+                <a lang="es" class="current" title="Encuentro de Gramática Generativa" href="index.html">Página principal</a>
+                <a lang="pt" class="current" title="Encuentro de Gramática Generativa" href="index.html">Página inicial</a>
             </td>
             <td class="navigation">
-                <a lang="en" class="current" title="Conference Program" href="program/2025-program.html">Program</a>
-                <a lang="en" class="current" title="Conference Program" href="program/2025-program.html">Program</a> 
- 
+                <a lang="en" href="registration/registration.html" title="Register for the Conference" href="registration" href="registration.html">Registration</a>
+                <a lang="es" href="registration/registration.html" title="Inscripción al Encuentro" href="registration">Inscripción</a>
+                <a lang="pt" href="registration/registration.html" title="Inscripción al Encuentro" href="registration">Cadastro</a>
             </td>
             <td class="navigation">
-                <a lang="en" title="Directions to the Conference" href="directions/turisticinfo.html">Turistic information</a>
-                <a lang="es" title="Directions to the Conference" href="directions/turisticinfo.html">Información turística</a>
+                <a lang="en" title="Program" href="program/2025-program.html">Program</a> 
+                <a lang="es" title="Programa" href="program/2025-program.html">Programa</a> 
+                <a lang="pt" title="Programa" href="program/2025-program.html">Programa</a> 
             </td>
             <td class="navigation">
-                <a lang="en" title="Conference Flyer" href="previous-editions/previous-editions.html">Previous editions</a>
-                <a lang="es" title="Conference Flyer" href="previous-editions/previous-editions.html">Ediciones previas</a>
-
+                <a lang="en" title="Turistic information" href="directions/turisticinfo.html">Turistic information</a>
+                <a lang="es" title="Información turística" href="directions/turisticinfo.html">Información turística</a>
+                <a lang="pt" title="Información turística" href="directions/turisticinfo.html">Informação turística</a>
+            </td>
+            <td class="navigation">
+                <a lang="en" title="Previous edition" href="previous-editions/previous-editions.html">Previous edition</a>
+                <a lang="es" title="Ediciones previas" href="previous-editions/previous-editions.html">Ediciones previas</a>
+                <a lang="pt" title="Ediciones previas" href="previous-editions/previous-editions.html">Edições anteriores</a>
             </td>
         </tr>
     </table>
 
     <h2 lang="en">Conference Program</h2>
     <h2 lang="es">Programa</h2>
+    <h2 lang="pt">Programa</h2>
 
 <p lang="es">El programa del EGG9 aún no se encuentra disponible</p>
 <p lang="en">The Conference Program of EGG9 is not available yet</p>
+<p lang="pt">O programa EGG9 ainda não está disponível</p>
 
 <!--
     <table>
@@ -360,9 +386,41 @@
     </table>
 -->
 
-    <footer>
-        &copy; Conference Organizers
-        &nbsp;|&nbsp; Design by <a href="https://github.com/mikepierce">Mike Pierce</a>
+  <footer lang="pt">
+    Encuentro de Gramática Generativa (EGG)<br>
+    encuentrodegramaticagenerativa@gmail.com
+    <br>
+<a href="https://www.facebook.com/EncuentroGG?locale=es_LA" target="_blank"><img src="images/facebook-logo.svg" alt="" width="26" height="26" title="Facebook"></a> 
+<br>
+<!--
+<a href="https://www.instagram.com/elbalinguistics/" target="_blank"><img src="images/instagram-logo.svg" alt="" width="26" height="26" title="Instagram"></a>
+<br>
+-->
+Este site foi construído com base no modelo desenvolvido por <a href="https://github.com/mikepierce">Mike Pierce</a>
+  </footer>
+  
+    <footer lang="es">
+    Encuentro de Gramática Generativa (EGG)<br>
+    encuentrodegramaticagenerativa@gmail.com
+    <br>
+<a href="https://www.facebook.com/EncuentroGG?locale=es_LA" target="_blank"><img src="images/facebook-logo.svg" alt="" width="26" height="26" title="Facebook"></a> 
+<br>
+<!--
+<a href="https://www.instagram.com/elbalinguistics/" target="_blank"><img src="images/instagram-logo.svg" alt="" width="26" height="26" title="Instagram"></a>
+<br>
+-->
+Este sitio está construido por sobre la plantilla diseñada por <a href="https://github.com/mikepierce">Mike Pierce</a>
+  </footer>
+  
+        <footer lang="en">
+    Encuentro de Gramática Generativa (EGG).
+    <br>
+    encuentrodegramaticagenerativa@gmail.com
+    <br>
+<a href="https://www.facebook.com/EncuentroGG?locale=es_LA" target="_blank"><img src="images/facebook-logo.svg" alt="" width="26" height="26" title="Facebook"></a> 
+<br>
+        This webpage is build over the template designed by <a href="https://github.com/mikepierce">Mike Pierce</a>
+
     </footer>
 
 <script>
