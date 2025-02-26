@@ -29,7 +29,7 @@ body{
     background-size: cover;
     background-attachment: fixed;
     color: #505050; 
-    text-align:left;
+    text-align:justify;
     font-family:'Roboto',sans-serif;
     font-size:1em;
     line-height:1.5em;
@@ -42,14 +42,14 @@ a.current{color: #52739e;}
 a.current:hover{color: #e82945;}
 a:hover{color: #b2132e;}
 a:active{color: #e82945;}
-h1,h2,h3,h4{clear:left; color: #813c54; margin:1.5em 0em 1em 0em; font-family:'Roboto Slab',serif; text-shadow: 1px 1px 2px #d0d0d0;}
+h1,h2,h3,h4{clear:justify; color: #813c54; margin:1.5em 0em 1em 0em; font-family:'Roboto Slab',serif; text-shadow: 1px 1px 2px #d0d0d0;}
 h1{font-size:2.67em;}
 h2{font-size:2.00em;}
 h3{font-size:1.67em;}
 h4{font-size:1.33em;}
-p{list-style:none; margin:24px auto 24px auto; padding:0px; width:900px; text-align:left;}
+p{list-style:none; margin:24px auto 24px auto; padding:0px; width:900px; text-align:justify;}
 li a, p a {text-decoration:underline; text-decoration-color:#b8860b;}
-ul{list-style:none; margin:24px auto 24px auto; padding:0px; width:800px; text-align:left;}
+ul{list-style:none; margin:24px auto 24px auto; padding:0px; width:800px; text-align:justify;}
 ul li{list-style:none; margin:0px auto 0px auto; padding:0px; text-align:left;}
 i,em{font-style:italic;}
 b,strong{font-weight:bold;}
@@ -88,13 +88,31 @@ th,td{
 
 /* Navigation Links (Home, Registration, etc) */
 table.navigation{width:800px;}
-td.navigation{font-size:1.67em; white-space:nowrap; width:20%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
+td.navigation{font-size:1.67em; white-space:nowrap; width:20%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px}
 
 /* Sponsor Images */
-table.sponsors{width:800px;}
+/*table.sponsors{width:800px;}
 td.sponsor{white-space:nowrap; width:33%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
-td.sponsor img{width: 100%}
+td.sponsor img{width: 100%}/*
+/* Sponsor Images */
+table.sponsors {
+    width: 800px;
+}
 
+td.sponsor {
+    white-space: nowrap; 
+    width: 33%; 
+    text-align: center; 
+    vertical-align: middle; 
+    padding: 0px;
+}
+
+td.sponsor img {
+    width: 100%; 
+    height: 300px;  /* Set a fixed height */
+    object-fit: contain;  /* Maintains aspect ratio while fitting within the fixed height */
+    max-width: 100%;  /* Ensures image doesn't exceed column width */
+}
 /* The Table on the Program Page */
 td.room{padding: 4px 12px 4px 4px; width: 90%; vertical-align:bottom; font-size:1.67em; color: #52739e; height:32px;}
 td.date{white-space:nowrap; width:130px; text-align:right; vertical-align:top; padding:4px 16px 0px 0px;}
