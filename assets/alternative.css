@@ -1,0 +1,416 @@
+/* main.css */
+
+/* These are the colors and fonts used throughout the webpage.
+ * I've listed them here so that a user may easily
+ * do a search-and-replace for these to change the site theme.
+ *   'Roboto',sans-serif; Font for the title text
+ *   'Roboto-Slab',serif; Font for the body text 
+ *   #fafafa; Background color of the site
+ *   #505050; Foreground (text) color of the site
+ *   #52739e; Navy, "Template" in the logo, current page in navigation, special titles in the Program
+ *   #b2132e; Reddish, "Conference" in the logo, hover color for links
+ *   #813c54; Heading color, titles in the Program
+ *   #b8860b; Dark Goldenrod, color for links
+ */
+
+
+
+
+/* --- Imports and Reset --- */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Slab');
+
+* {
+    box-sizing: border-box; /* CRUCIAL: Include padding and border in element's total width/height */
+    border: 0;
+    font: inherit;
+    font-size: 100%; /* Use relative units, easier to scale */
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+/* --- Base Styles (Mobile-First) --- */
+
+body {
+    background-color: #fafafa;
+    background-size: cover;  /* This is fine, but be mindful of large background images */
+    background-attachment: fixed; /* Consider removing this for performance on mobile */
+    color: #505050;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem; /* Use rem for font sizes, relative to root */
+    line-height: 1.5;
+    margin: 1rem auto; /* Responsive margin */
+    width: 95%;       /* Responsive width: start with almost full width */
+    max-width: 1000px; /* Maximum width for larger screens */
+}
+
+a {
+    color: #b8860b;
+    text-decoration: none;
+}
+
+a.current {
+    color: #52739e;
+}
+
+a.current:hover {
+    color: #e82945;
+}
+
+a:hover {
+    color: #b2132e;
+}
+
+a:active {
+    color: #e82945;
+}
+
+h1, h2, h3, h4 {
+    clear: both; /* Use both, not just justify */
+    color: #813c54;
+    margin: 1.5rem 0 1rem 0;
+    font-family: 'Roboto Slab', serif;
+    text-shadow: 1px 1px 2px #d0d0d0;
+}
+
+h1 {
+    font-size: 2.67rem;
+}  /* rem is relative to root font-size */
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.67rem;
+}
+
+h4 {
+    font-size: 1.33rem;
+}
+
+p {
+    list-style: none;
+    margin: 1.5rem auto; /* Use rem for margins */
+    padding: 0;
+     /* Fluid width */
+    text-align: justify;
+}
+
+li a, p a {
+    text-decoration: underline;
+    text-decoration-color: #b8860b;
+}
+
+ul {
+    list-style: none;
+    margin: 1.5rem auto;
+    padding: 0;
+    /* Fluid width */
+    text-align: justify;
+}
+
+ul li {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+}
+
+i, em {
+    font-style: italic;
+}
+
+b, strong {
+    font-weight: bold;
+}
+
+sup {
+    vertical-align: super;
+    font-size: 0.8em;  /* Keep these as em */
+    line-height: 0;
+}
+
+sub {
+    vertical-align: sub;
+    font-size: 0.8em;
+    line-height: 0;
+}
+
+table {
+    width: 100%;  /* Make tables full width by default */
+    margin: 0.75rem auto 1.5rem auto; /* Responsive margins */
+    /* float: center;  Remove this, it's not valid CSS */
+    /* border: 1px solid black;  Keep commented out */
+}
+
+th, td {
+    text-align: left;
+    /* border: 1px solid black; Keep commented out */
+    padding: 0.5rem; /* Add some padding to table cells */
+}
+
+
+/* --- Specific Element Styles --- */
+
+/* Website Banner */
+.banner {
+    position: relative;
+    font-family: 'Roboto Slab', serif;
+    /*Consider set a max-width to the banner, if necessary */
+}
+
+.top-left {
+    font-size: 3rem; /* Reduce size for mobile */
+    color: #505050;
+    background: #fafafa;
+    text-align: center;
+    width: 100%; /* Full width */
+    padding: 1rem 0; /* Responsive padding */
+    position: absolute; /*Consider other kind of position */
+    top: 0;
+    left: 0; /* Ensure it covers the full width */
+}
+
+.bottom-right {
+    font-size: 1.5rem; /* Reduce size for mobile */
+    color: #fafafa;
+    line-height: 1.5;
+    width: auto;
+    padding: 0 1rem 1rem 0; /* Responsive padding */
+    text-align: right;
+    position: absolute;  /*Consider other kind of position */
+    bottom: 0;
+    right: 0;
+    text-shadow: 0px 0px 6px #000000;
+}
+
+/* Conference Title Logo */
+.title1 {
+    color: #b2132e;
+    font-size: 1em;  /* Keep these relative, they'll scale with the body */
+    line-height: normal;
+    text-shadow: 1px 1px 3px #c0c0c0;
+}
+
+.title2 {
+    color: #52739e;
+    text-shadow: 1px 1px 3px #c0c0c0;
+}
+
+.year {
+    color: #505050;
+    font-size: 0.67em;
+    font-weight: lighter;
+}
+
+/* Navigation Links (Home, Registration, etc) */
+table.navigation {
+    width: 90%; /* Responsive width */
+    max-width: 800px; /* Maximum width */
+}
+
+td.navigation {
+    font-size: 1.2rem; /* Reduce size */
+    white-space: nowrap;
+    width: 20%;  /* This will likely need flexbox or grid */
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.5rem; /* Responsive padding */
+}
+
+
+/* Sponsor Images */
+table.sponsors {
+   width: 90%; /*Responsive width */
+   max-width: 800px;
+   display: flex;
+   flex-wrap: wrap; /* Very important for responsiveness */
+   justify-content: center;
+}
+
+td.sponsor {
+   flex: 1 1 33.333%; /* Flex basis for 3 columns.  Will wrap */
+   /* Alternative: flex: 1 1 150px; (Grow, Shrink, minimum 150px width) */
+   
+   box-sizing: border-box; /*VERY IMPORTANT*/
+   text-align: center;
+   vertical-align: middle;
+   padding: 0.5rem;
+}
+
+td.sponsor img {
+   width: 100%; /* Image takes up full width of column */
+   height: auto; /* Maintain aspect ratio. Remove fixed height */
+   max-height: 300px; /* Remove fixed height*/
+   object-fit: contain; /* Keeps aspect ratio */
+}
+
+/* The Table on the Program Page */
+td.room {
+    padding: 0.25rem 0.75rem 0.25rem 0.25rem;
+    width: auto; /* Let width be determined by content */
+    vertical-align: bottom;
+    font-size: 1.2rem; /* Reduce */
+    color: #52739e;
+   /* height: 32px; Remove fixed height */
+}
+
+td.date {
+    white-space: nowrap;
+    width: auto;
+    text-align: right;
+    vertical-align: top;
+    padding: 0.25rem 1rem 0 0;
+        font-size: 1rem;
+}
+
+td.title {
+    padding: 0.25rem 0.75rem 0.25rem 0.25rem;
+    width: auto;
+    vertical-align: top;
+    font-size: 1.1rem;
+    color: #813c54;
+   /* height: 32px; Remove fixed height*/
+    font-family: 'Roboto Slab', serif;
+    text-shadow: 1px 1px 2px #d0d0d0;
+}
+
+td.title-special {
+    padding: 0.25rem 0.75rem 0.25rem 0.25rem;
+    width: auto;
+    vertical-align: top;
+    font-size: 1.2rem;
+    color: #52739e;
+   /* height: 32px;  Remove fixed height*/
+    font-family: 'Roboto Slab', serif;
+    text-shadow: 1px 1px 2px #d0d0d0;
+}
+
+td.speaker {
+    padding: 0.25rem 0.75rem 0.25rem 0.25rem;
+    font-style: italic;
+    font-size: 1rem;
+    /* max-height: 999999px; Remove this - it does nothing */
+}
+
+td.abstract {
+    padding: 0.25rem 0.75rem 0.75rem 0.25rem;
+    font-size: 1rem;
+    /* max-height: 999999px; Remove this */
+}
+
+td.abstract img {
+    display: block;
+    margin: 0.25rem auto 0.5rem auto;
+    max-width: 100%; /* Make images in abstracts responsive */
+    height: auto;
+}
+
+table.plenary {
+    padding-top: 0.5rem;
+    background: #ffffff;
+}
+
+/* Registration and Directions iframes and Images */
+iframe.registration,
+iframe.directions {
+    display: block;
+    margin: 1rem auto 2rem auto;
+    width: 95%; /* Responsive width */
+    max-width: 800px; /* Limit maximum width */
+    height: auto; /* Let the height be determined by the content */
+    border: none;
+}
+/*Set aspect ratio to iframe, if it is necessary*/
+iframe.registration{
+        aspect-ratio: 1 / 2; /*width / height*/
+}
+iframe.directions{
+        aspect-ratio: 2 / 1;
+}
+img.center {
+    display: block;
+    width: 90%; /* Responsive width */
+    max-width: 600px;  /* Set a reasonable max-width*/
+    margin: 1rem auto 2rem auto;
+        height: auto;
+}
+
+/* Flyer Images */
+table.flyers {
+    width: 90%;
+        max-width: 800px;
+        display: flex; /*Use flexbox */
+        flex-wrap: wrap;
+        justify-content: center;
+}
+
+td.flyer {
+    flex: 1 1 50%; /* Two columns, will wrap on smaller screens */
+        box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.5rem;
+}
+
+/* This rule is redundant as it's already defined above */
+/* td.sponsor img {
+    width: 100%;
+} */
+
+footer {
+    font-size: 0.875rem;
+    margin-top: 3rem; /* Responsive margin */
+    text-align: center;
+}
+
+/* --- Media Queries --- */
+
+/* Small screens */
+@media (max-width: 768px) {
+  
+    /* Adjust font sizes for smaller screens */
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.8rem; }
+    h3 { font-size: 1.5rem; }
+    h4 { font-size: 1.2rem; }
+
+    p, ul, li, th, td, a {
+        font-size: 0.9rem; /* Smaller body font size */
+    }
+
+    td.navigation {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+        
+        /*Make banner text responsive */
+        .top-left{font-size: 2rem}
+        .bottom-right{font-size: 1.2rem}
+
+}
+
+/* Very small screens */
+@media (max-width: 480px) {
+        .top-left{font-size: 1.5rem}
+        .bottom-right{font-size: 1rem}
+}
+
+        /* Hide elements not matching the selected language */
+body[data-lang="pt"] [lang="pt"],
+body[data-lang="en"] [lang="en"],
+body[data-lang="es"] [lang="es"] {
+    display: block;
+}
+
+body[data-lang="pt"] [lang="en"],
+body[data-lang="pt"] [lang="es"],
+body[data-lang="en"] [lang="pt"],
+body[data-lang="en"] [lang="es"],
+body[data-lang="es"] [lang="pt"],
+body[data-lang="es"] [lang="en"] {
+    display: none;
+}       
