@@ -393,6 +393,12 @@ footer {
 
 }
 
+.center-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ } 
+
 /* Very small screens */
 @media (max-width: 480px) {
         .top-left{font-size: 1.5rem}
