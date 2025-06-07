@@ -232,7 +232,7 @@ table.sponsors {
 }
 
 td.sponsor {
-   flex: 1 1 33.333%; /* Flex basis for 3 columns.  Will wrap */
+   flex: 1 1 25%; /* Flex basis for 4 columns.  Will wrap */
    /* Alternative: flex: 1 1 150px; (Grow, Shrink, minimum 150px width) */
    
    box-sizing: border-box; /*VERY IMPORTANT*/
@@ -242,7 +242,7 @@ td.sponsor {
 }
 
 td.sponsor img {
-   width: 100%; /* Image takes up full width of column */
+   width: 200px; /* Image takes up full width of column */
    height: auto; /* Maintain aspect ratio. Remove fixed height */
    max-height: 300px; /* Remove fixed height*/
    object-fit: contain; /* Keeps aspect ratio */
